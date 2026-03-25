@@ -1,0 +1,14 @@
+# Ignore specific project folders
+Implementationfiles/
+.agent/
+
+# Ignore cache folders
+.cache/
+node_modules/
+
+# Ignore swap and temporary files
+*.swp
+..gitignore.swp
+.agent/
+Implementationfiles/
+*.swp

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View the Project Gallery at Velocity Detailing. See examples of our flawless track pack PPF, ceramic coating, paint correction, and custom vinyl wraps.">
+    <title>Gallery | Velocity Detailing Studio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">
+                <i class="fa-solid fa-car-burst text-accent"></i>
+                Velocity<span>Detailing</span>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html" class="btn btn-primary" style="padding: 0.6rem 1.2rem; margin-left:1rem;">Book Now</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-toggle" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main style="padding-top: var(--navbar-height);">
+        <!-- Page Header -->
+        <section class="page-header" style="background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.95)), url('assets/images/gallery-hero.png') center/cover; padding: calc(var(--spacing-xl) * 2) 0; text-align: center; border-bottom: 1px solid rgba(212, 175, 55, 0.2);">
+            <div class="container">
+                <h1 style="font-size: 3.5rem; letter-spacing: 2px;">Project <span class="text-accent">Gallery</span></h1>
+                <p style="font-size: 1.2rem; color: var(--color-text-secondary); max-width: 600px; margin: 0 auto;">A portfolio of perfection.</p>
+            </div>
+        </section>
+
+        <!-- Gallery Grid -->
+        <section class="section-padding reveal">
+            <div class="container">
+                <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1rem; grid-auto-rows: 250px; grid-auto-flow: dense;">
+                    <!-- Gallery Item -->
+                    <div style="grid-column: span 2; grid-row: span 2; position: relative; overflow: hidden; border-radius: 8px;">
+                        <img src="assets/images/gallery-1.png" alt="Supercar PPF" style="width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform 0.5s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                        <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 1.5rem; background: linear-gradient(transparent, rgba(0,0,0,0.9)); pointer-events: none;">
+                            <h3 style="color: #fff; margin-bottom: 0;">Full Stealth PPF</h3>
+                            <p style="color: var(--color-accent-primary); font-size: 0.9rem;">Lamborghini Huracan</p>
+                        </div>
+                    </div>
+                    <!-- Gallery Item -->
+                    <div style="position: relative; overflow: hidden; border-radius: 8px;">
+                        <img src="assets/images/gallery-2.png" alt="Ceramic Coating Porsche" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                        <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 1rem; background: linear-gradient(transparent, rgba(0,0,0,0.8)); pointer-events: none;">
+                            <h4 style="color: #fff; margin: 0;">10H Ceramic Coating</h4>
+                        </div>
+                    </div>
+                    <!-- Gallery Item -->
+                    <div style="position: relative; overflow: hidden; border-radius: 8px;">
+                        <img src="assets/images/gallery-3.png" alt="Audi Detail" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                        <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 1rem; background: linear-gradient(transparent, rgba(0,0,0,0.8)); pointer-events: none;">
+                            <h4 style="color: #fff; margin: 0;">Stage 2 Paint Correction</h4>
+                        </div>
+                    </div>
+                    <!-- Gallery Item -->
+                    <div style="grid-row: span 2; position: relative; overflow: hidden; border-radius: 8px;">
+                        <img src="assets/images/gallery-4.png" alt="Ferrari Wrap" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                        <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 1.5rem; background: linear-gradient(transparent, rgba(0,0,0,0.9)); pointer-events: none;">
+                            <h3 style="color: #fff; margin-bottom: 0;">Satin Wrap</h3>
+                            <p style="color: var(--color-accent-primary); font-size: 0.9rem;">Ferrari 488</p>
+                        </div>
+                    </div>
+                    <!-- Gallery Item -->
+                    <div style="grid-column: span 2; position: relative; overflow: hidden; border-radius: 8px;">
+                        <img src="assets/images/gallery-5.png" alt="G-Wagon" style="width: 100%; height: 100%; object-fit: cover; object-position: center 20%; transition: transform 0.5s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                        <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 1.5rem; background: linear-gradient(transparent, rgba(0,0,0,0.9)); pointer-events: none;">
+                            <h3 style="color: #fff; margin-bottom: 0;">Track Pack PPF + Ceramic</h4>
+                            <p style="color: var(--color-accent-primary); font-size: 0.9rem;">Mercedes G63 AMG</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center" style="margin-top: 3rem;">
+                    <a href="https://instagram.com" target="_blank" class="btn btn-outline"><i class="fa-brands fa-instagram" style="margin-right: 8px;"></i> Follow Us for More</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="nav-logo" style="margin-bottom: 1rem; display: inline-flex;">
+                        Velocity<span class="text-accent">Detailing</span>
+                    </a>
+                    <p>Elevating automotive aesthetics through precision, passion, and premium materials.</p>
+                    <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                        <a href="#" aria-label="Instagram" style="color: var(--color-text-secondary); font-size: 1.2rem;"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook" style="color: var(--color-text-secondary); font-size: 1.2rem;"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" aria-label="YouTube" style="color: var(--color-text-secondary); font-size: 1.2rem;"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="gallery.html">Project Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="services.html#ceramic">Ceramic Coating</a></li>
+                        <li><a href="services.html#ppf">Paint Protection Film</a></li>
+                        <li><a href="services.html#wraps">Color Wraps</a></li>
+                        <li><a href="services.html#films">Sun Films</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <p><i class="fa-solid fa-location-dot text-accent" style="width: 20px;"></i> 123 Detailing Ave, Auto City, AC 90210</p>
+                    <p><i class="fa-solid fa-phone text-accent" style="width: 20px;"></i> (555) 123-4567</p>
+                    <p><i class="fa-solid fa-envelope text-accent" style="width: 20px;"></i> info@velocitydetailing.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Velocity Detailing Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
